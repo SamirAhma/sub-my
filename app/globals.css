@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background:
+    radial-gradient(900px 480px at 0% -10%, rgba(229, 0, 125, 0.18), transparent 55%),
+    radial-gradient(800px 420px at 100% 0%, rgba(0, 166, 81, 0.12), transparent 50%),
+    radial-gradient(700px 380px at 80% 110%, rgba(245, 196, 0, 0.08), transparent 45%),
+    #07090d;
+  min-height: 100dvh;
+}
+
+::selection {
+  background: rgba(229, 0, 125, 0.45);
+  color: white;
+}
+
+.rail-label,
+.rail-label * {
+  pointer-events: none !important;
+  user-select: none;
+}
+
+.scroll-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
+}
+
+@keyframes route-flow {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+
+.route-flow {
+  stroke-dasharray: 7 9;
+  animation: route-flow 0.9s linear infinite;
+}
+
+@keyframes station-ping {
+  0% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.station-ping {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: station-ping 1.8s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-flow,
+  .station-ping {
+    animation: none;
+  }
+}

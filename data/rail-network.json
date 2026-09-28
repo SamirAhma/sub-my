@@ -1,0 +1,609 @@
+{
+  "transferBufferMinutes": 5,
+  "majorInterchanges": [
+    "kl-sentral",
+    "pasar-seni",
+    "trx"
+  ],
+  "disclaimer": "Typical weekday evening model: last trains leave the outer termini around 11:00–11:45 PM and are still moving through central Kuala Lumpur until about midnight. Interchanges hold a minimum 5-minute buffer. This is not a live RapidKL feed — confirm tonight’s timetable before you travel. The Ampang Line is the spine from Ampang to Sentul Timur; the Sri Petaling branch is not on this map.",
+  "lines": [
+    {
+      "id": "kelana",
+      "name": "Kelana Jaya Line",
+      "mode": "LRT",
+      "code": "KJL",
+      "color": "#E5007D",
+      "segmentMinutes": 4,
+      "headwayMinutes": 8,
+      "lastForward": "23:05",
+      "lastBackward": "23:10",
+      "stations": [
+        "gombak",
+        "wangsa-maju",
+        "dato-keramat",
+        "klcc",
+        "kampung-baru",
+        "dang-wangi",
+        "masjid-jamek",
+        "pasar-seni",
+        "kl-sentral",
+        "bangsar",
+        "universiti",
+        "kelana-jaya",
+        "subang-jaya",
+        "putra-heights"
+      ]
+    },
+    {
+      "id": "ampang",
+      "name": "Ampang Line",
+      "mode": "LRT",
+      "code": "AGL",
+      "color": "#F7941D",
+      "segmentMinutes": 4,
+      "headwayMinutes": 8,
+      "lastForward": "23:20",
+      "lastBackward": "23:15",
+      "stations": [
+        "ampang",
+        "cempaka",
+        "pandan-indah",
+        "maluri",
+        "chan-sow-lin",
+        "pudu",
+        "hang-tuah",
+        "plaza-rakyat",
+        "masjid-jamek",
+        "bandaraya",
+        "sultan-ismail",
+        "pwtc",
+        "titiwangsa",
+        "sentul",
+        "sentul-timur"
+      ]
+    },
+    {
+      "id": "kajang",
+      "name": "Kajang Line",
+      "mode": "MRT",
+      "code": "KGL",
+      "color": "#00A651",
+      "segmentMinutes": 5,
+      "headwayMinutes": 10,
+      "lastForward": "23:00",
+      "lastBackward": "23:00",
+      "stations": [
+        "kwasa-damansara",
+        "sungai-buloh",
+        "phileo-damansara",
+        "muzium-negara",
+        "pasar-seni",
+        "merdeka",
+        "bukit-bintang",
+        "trx",
+        "cochrane",
+        "maluri",
+        "taman-suntex",
+        "bandar-tun-hussein-onn",
+        "kajang"
+      ]
+    },
+    {
+      "id": "putrajaya",
+      "name": "Putrajaya Line",
+      "mode": "MRT",
+      "code": "PYL",
+      "color": "#F5C400",
+      "segmentMinutes": 5,
+      "headwayMinutes": 10,
+      "lastForward": "23:00",
+      "lastBackward": "22:45",
+      "stations": [
+        "kwasa-damansara",
+        "sungai-buloh",
+        "kentonmen",
+        "jalan-ipoh",
+        "titiwangsa",
+        "ampang-park",
+        "persiaran-klcc",
+        "conlay",
+        "trx",
+        "chan-sow-lin",
+        "kuchai",
+        "sungai-besi",
+        "serdang",
+        "cyberjaya",
+        "putrajaya-sentral"
+      ]
+    },
+    {
+      "id": "monorail",
+      "name": "KL Monorail",
+      "mode": "Monorail",
+      "code": "MRL",
+      "color": "#8BC34A",
+      "segmentMinutes": 3,
+      "headwayMinutes": 8,
+      "lastForward": "23:45",
+      "lastBackward": "23:40",
+      "stations": [
+        "kl-sentral",
+        "tun-sambanthan",
+        "maharajalela",
+        "hang-tuah",
+        "imbi",
+        "bukit-bintang",
+        "raja-chulan",
+        "bukit-nanas",
+        "medan-tuanku",
+        "chow-kit",
+        "titiwangsa"
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "id": "gombak",
+      "name": "Gombak",
+      "x": 1000,
+      "y": 46,
+      "anchor": "w"
+    },
+    {
+      "id": "wangsa-maju",
+      "name": "Wangsa Maju",
+      "x": 910,
+      "y": 92,
+      "anchor": "ne"
+    },
+    {
+      "id": "dato-keramat",
+      "name": "Dato' Keramat",
+      "x": 820,
+      "y": 145,
+      "anchor": "ne"
+    },
+    {
+      "id": "klcc",
+      "name": "KLCC",
+      "x": 700,
+      "y": 275,
+      "anchor": "e",
+      "label": true,
+      "aliases": [
+        "klcc",
+        "petronas",
+        "twin towers"
+      ]
+    },
+    {
+      "id": "kampung-baru",
+      "name": "Kampung Baru",
+      "x": 590,
+      "y": 340,
+      "anchor": "ne"
+    },
+    {
+      "id": "dang-wangi",
+      "name": "Dang Wangi",
+      "x": 520,
+      "y": 375,
+      "anchor": "ne"
+    },
+    {
+      "id": "masjid-jamek",
+      "name": "Masjid Jamek",
+      "x": 465,
+      "y": 400,
+      "anchor": "w",
+      "aliases": [
+        "masjid jamek",
+        "jamek"
+      ]
+    },
+    {
+      "id": "pasar-seni",
+      "name": "Pasar Seni",
+      "x": 375,
+      "y": 480,
+      "anchor": "w",
+      "aliases": [
+        "pasar seni",
+        "central market"
+      ]
+    },
+    {
+      "id": "kl-sentral",
+      "name": "KL Sentral",
+      "short": "KL Sentral",
+      "x": 265,
+      "y": 590,
+      "anchor": "w",
+      "aliases": [
+        "kl sentral",
+        "kls",
+        "sentral"
+      ]
+    },
+    {
+      "id": "bangsar",
+      "name": "Bangsar",
+      "x": 200,
+      "y": 655,
+      "anchor": "w",
+      "label": true
+    },
+    {
+      "id": "universiti",
+      "name": "Universiti",
+      "x": 145,
+      "y": 715,
+      "anchor": "w",
+      "label": true
+    },
+    {
+      "id": "kelana-jaya",
+      "name": "Kelana Jaya",
+      "x": 100,
+      "y": 770,
+      "anchor": "w",
+      "label": true
+    },
+    {
+      "id": "subang-jaya",
+      "name": "Subang Jaya",
+      "x": 75,
+      "y": 820,
+      "anchor": "e",
+      "label": true,
+      "aliases": [
+        "subang"
+      ]
+    },
+    {
+      "id": "putra-heights",
+      "name": "Putra Heights",
+      "x": 155,
+      "y": 855,
+      "anchor": "e"
+    },
+    {
+      "id": "ampang",
+      "name": "Ampang",
+      "x": 1065,
+      "y": 280,
+      "anchor": "w"
+    },
+    {
+      "id": "cempaka",
+      "name": "Cempaka",
+      "x": 1010,
+      "y": 340,
+      "anchor": "e"
+    },
+    {
+      "id": "pandan-indah",
+      "name": "Pandan Indah",
+      "x": 955,
+      "y": 400,
+      "anchor": "e"
+    },
+    {
+      "id": "maluri",
+      "name": "Maluri",
+      "x": 900,
+      "y": 465,
+      "anchor": "ne"
+    },
+    {
+      "id": "chan-sow-lin",
+      "name": "Chan Sow Lin",
+      "short": "Chan Sow Lin",
+      "x": 800,
+      "y": 515,
+      "anchor": "ne",
+      "aliases": [
+        "csl",
+        "chan sow lin"
+      ]
+    },
+    {
+      "id": "pudu",
+      "name": "Pudu",
+      "x": 720,
+      "y": 545,
+      "anchor": "s"
+    },
+    {
+      "id": "hang-tuah",
+      "name": "Hang Tuah",
+      "x": 600,
+      "y": 550,
+      "anchor": "s"
+    },
+    {
+      "id": "plaza-rakyat",
+      "name": "Plaza Rakyat",
+      "x": 505,
+      "y": 475,
+      "anchor": "w"
+    },
+    {
+      "id": "bandaraya",
+      "name": "Bandaraya",
+      "x": 450,
+      "y": 330,
+      "anchor": "w"
+    },
+    {
+      "id": "sultan-ismail",
+      "name": "Sultan Ismail",
+      "x": 455,
+      "y": 265,
+      "anchor": "w"
+    },
+    {
+      "id": "pwtc",
+      "name": "PWTC",
+      "x": 455,
+      "y": 205,
+      "anchor": "w",
+      "aliases": [
+        "pwtc",
+        "putra world trade centre"
+      ]
+    },
+    {
+      "id": "titiwangsa",
+      "name": "Titiwangsa",
+      "x": 470,
+      "y": 145,
+      "anchor": "w"
+    },
+    {
+      "id": "sentul",
+      "name": "Sentul",
+      "x": 405,
+      "y": 90,
+      "anchor": "w"
+    },
+    {
+      "id": "sentul-timur",
+      "name": "Sentul Timur",
+      "x": 335,
+      "y": 42,
+      "anchor": "e"
+    },
+    {
+      "id": "kwasa-damansara",
+      "name": "Kwasa Damansara",
+      "short": "Kwasa",
+      "x": 72,
+      "y": 72,
+      "anchor": "e",
+      "aliases": [
+        "kwasa"
+      ]
+    },
+    {
+      "id": "sungai-buloh",
+      "name": "Sungai Buloh",
+      "x": 160,
+      "y": 120,
+      "anchor": "nw"
+    },
+    {
+      "id": "phileo-damansara",
+      "name": "Phileo Damansara",
+      "short": "Phileo",
+      "x": 225,
+      "y": 235,
+      "anchor": "w"
+    },
+    {
+      "id": "muzium-negara",
+      "name": "Muzium Negara",
+      "short": "Muzium",
+      "x": 295,
+      "y": 355,
+      "anchor": "w",
+      "aliases": [
+        "museum",
+        "muzium"
+      ]
+    },
+    {
+      "id": "merdeka",
+      "name": "Merdeka",
+      "x": 410,
+      "y": 445,
+      "anchor": "sw"
+    },
+    {
+      "id": "bukit-bintang",
+      "name": "Bukit Bintang",
+      "x": 700,
+      "y": 415,
+      "anchor": "e",
+      "aliases": [
+        "bintang",
+        "bukit bintang"
+      ]
+    },
+    {
+      "id": "trx",
+      "name": "Tun Razak Exchange",
+      "short": "TRX",
+      "x": 790,
+      "y": 455,
+      "anchor": "s",
+      "aliases": [
+        "trx",
+        "tun razak",
+        "exchange"
+      ]
+    },
+    {
+      "id": "cochrane",
+      "name": "Cochrane",
+      "x": 880,
+      "y": 400,
+      "anchor": "e"
+    },
+    {
+      "id": "taman-suntex",
+      "name": "Taman Suntex",
+      "x": 980,
+      "y": 530,
+      "anchor": "e"
+    },
+    {
+      "id": "bandar-tun-hussein-onn",
+      "name": "Bandar Tun Hussein Onn",
+      "short": "BTHO",
+      "x": 1030,
+      "y": 620,
+      "anchor": "w",
+      "aliases": [
+        "btho",
+        "tun hussein"
+      ]
+    },
+    {
+      "id": "kajang",
+      "name": "Kajang",
+      "x": 1055,
+      "y": 720,
+      "anchor": "w"
+    },
+    {
+      "id": "kentonmen",
+      "name": "Kentonmen",
+      "x": 255,
+      "y": 140,
+      "anchor": "n"
+    },
+    {
+      "id": "jalan-ipoh",
+      "name": "Jalan Ipoh",
+      "x": 355,
+      "y": 142,
+      "anchor": "n"
+    },
+    {
+      "id": "ampang-park",
+      "name": "Ampang Park",
+      "x": 575,
+      "y": 125,
+      "anchor": "n",
+      "label": true
+    },
+    {
+      "id": "persiaran-klcc",
+      "name": "Persiaran KLCC",
+      "x": 990,
+      "y": 210,
+      "anchor": "e"
+    },
+    {
+      "id": "conlay",
+      "name": "Conlay",
+      "x": 900,
+      "y": 340,
+      "anchor": "e"
+    },
+    {
+      "id": "kuchai",
+      "name": "Kuchai",
+      "x": 800,
+      "y": 630,
+      "anchor": "e"
+    },
+    {
+      "id": "sungai-besi",
+      "name": "Sungai Besi",
+      "x": 860,
+      "y": 720,
+      "anchor": "e",
+      "label": true
+    },
+    {
+      "id": "serdang",
+      "name": "Serdang",
+      "x": 800,
+      "y": 790,
+      "anchor": "s"
+    },
+    {
+      "id": "cyberjaya",
+      "name": "Cyberjaya City Centre",
+      "short": "Cyberjaya",
+      "x": 710,
+      "y": 830,
+      "anchor": "s",
+      "aliases": [
+        "cyberjaya"
+      ]
+    },
+    {
+      "id": "putrajaya-sentral",
+      "name": "Putrajaya Sentral",
+      "short": "Putrajaya",
+      "x": 600,
+      "y": 855,
+      "anchor": "s",
+      "aliases": [
+        "putrajaya"
+      ]
+    },
+    {
+      "id": "tun-sambanthan",
+      "name": "Tun Sambanthan",
+      "x": 330,
+      "y": 640,
+      "anchor": "s"
+    },
+    {
+      "id": "maharajalela",
+      "name": "Maharajalela",
+      "x": 440,
+      "y": 600,
+      "anchor": "s"
+    },
+    {
+      "id": "imbi",
+      "name": "Imbi",
+      "x": 650,
+      "y": 470,
+      "anchor": "e"
+    },
+    {
+      "id": "raja-chulan",
+      "name": "Raja Chulan",
+      "x": 740,
+      "y": 370,
+      "anchor": "e"
+    },
+    {
+      "id": "bukit-nanas",
+      "name": "Bukit Nanas",
+      "x": 770,
+      "y": 310,
+      "anchor": "e"
+    },
+    {
+      "id": "medan-tuanku",
+      "name": "Medan Tuanku",
+      "x": 655,
+      "y": 195,
+      "anchor": "e"
+    },
+    {
+      "id": "chow-kit",
+      "name": "Chow Kit",
+      "x": 575,
+      "y": 200,
+      "anchor": "e"
+    }
+  ]
+}
