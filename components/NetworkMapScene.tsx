@@ -6,7 +6,7 @@ import { Grid } from "@react-three/drei/core/Grid";
 import { Html } from "@react-three/drei/web/Html";
 import { Canvas, useThree, type ThreeEvent } from "@react-three/fiber";
 import { LocateFixed, Minus, Plus } from "lucide-react";
-import { useEffect, useLayoutEffect, useMemo, useRef, useState, type MutableRefObject, type ReactNode, type RefObject } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type MutableRefObject, type ReactNode, type Ref, type RefObject } from "react";
 import { getStation, isTerminus, lines, mapLabel, stations } from "@/lib/rail-data";
 import type { LabelAnchor, LineId, RouteSegment } from "@/lib/types";
 import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
@@ -150,7 +150,7 @@ function FrameCamera({
   onPose,
 }: {
   layout: MapLayout;
-  controlsRef: RefObject<OrbitControlsImpl | null>;
+  controlsRef: RefObject<OrbitControlsImpl>;
   onPose: (position: THREE.Vector3, target: THREE.Vector3) => void;
 }) {
   const camera = useThree((state) => state.camera) as THREE.PerspectiveCamera;
@@ -291,7 +291,7 @@ function MapScene({
   onSelectStation,
   controlsRef,
   onPose,
-}: NetworkMapSceneProps & { controlsRef: RefObject<OrbitControlsImpl | null>; onPose: (position: THREE.Vector3, target: THREE.Vector3) => void }) {
+}: NetworkMapSceneProps & { controlsRef: RefObject<OrbitControlsImpl>; onPose: (position: THREE.Vector3, target: THREE.Vector3) => void }) {
   const [hovered, setHovered] = useState<string | null>(null);
   const dragged = useRef(false);
 
@@ -550,7 +550,7 @@ function MapScene({
       <EndpointMarker id={destinationId} letter="B" fill="#E5007D" color="#ffffff" hovered={hovered} layout={layout} />
 
       <OrbitControls
-        ref={controlsRef}
+        ref={controlsRef as Ref<OrbitControlsImpl>}
         makeDefault
         enableDamping
         dampingFactor={0.1}
@@ -642,7 +642,7 @@ function zoomBy(controls: OrbitControlsImpl | null, factor: number) {
 }
 
 export function NetworkMapScene({ originId, destinationId, segments, transferIds, hint, onSelectStation }: NetworkMapSceneProps) {
-  const controlsRef = useRef<OrbitControlsImpl | null>(null);
+  const controlsRef = useRef<OrbitControlsImpl>(null);
   const poseRef = useRef<{ position: THREE.Vector3; target: THREE.Vector3 } | null>(null);
   const showRotateHint = !hint.toLowerCase().includes("rotate");
 
